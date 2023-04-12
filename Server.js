@@ -20,8 +20,8 @@ async function main() {
 
         //get accounts data putting restriction 
         //await getAccountData(client, 600000000,pipeline);
-        await getAccountsDataUsingStreamAPI(client, 600000000,pipeline);
-       // await getAccountsDataUsingHasNext(client, 600000000,pipeline);
+       // await getAccountsDataUsingStreamAPI(client, 600000000,pipeline);
+       await getAccountsDataUsingHasNext(client, 600000000,pipeline);
 
     } finally {
         await client.close();
